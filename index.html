@@ -1,217 +1,7 @@
 <!DOCTYPE html>
+ <html lang="en">
  
-<html lang="en">
- <head>
-   <title>LEX ⚔️</title>
-
-   <meta charset="UTF-8" />
-   <meta name="author" content="DappHero" />
-   <meta name="description" content="DappHero" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
- </head>
- 
- <body>
-   <header>
-     <nav>
-       <a href = "https://twitter.com/lex_DAO">
-       <img class ="img"
-         alt="Logo"
-         src="//s3.amazonaws.com/appforest_uf/f1604160403574x604172447140806100/lexdaoooo.jpg"
-         height="70"
-       />
-       <ul>
-         <li>
-           <a class = "link" href="#"> ABOUT</a>
-           <ul>
-             <li><a href="#"><a class = "link" href ="https://etherscan.io/address/0xA5C5C8Af327248c4c2dce810a3d3Cffb8C4F66ab#code">LEX</a></li>
-             <li><a href="#"><a class = "link" href ="https://github.com/lexDAO/LexCorpus/blob/master/contracts/token/lextoken/legal/PersonalTokenTOS.md">ToS</a></li>
-           </ul>
-         </li>
-       </ul>
-     </nav>
-     <p class = "lex"> $LEX</p>
-       <button class="button connectButton" data-dh-feature="network" data-dh-property-enable="true">
-         <i>Connect</i>
-       </button>
-     </p>
-     <header>
-        <div
-          data-dh-feature="customContract"
-          data-dh-property-method-id="nEQE"
-          data-dh-property-auto-invoke="true"
-          data-dh-property-contract-name="LexDAO Engineering"
-          data-dh-property-method-name="balanceOf"
-        >
-        <p class = "balance"> BALANCE</p>
-          <section>
-            <aside>
-              <section>
-                <input
-                  type="text"
-                  placeholder="address"
-                  data-dh-property-method-id="nEQE"
-                  data-dh-property-input-name="account"
-                  style="display:none"
-                  value="$CURRENT_USER"
-                />
-              </section>
-              <div
-                data-dh-property-method-id="nEQE"
-                data-dh-property-outputs="true"
-                data-dh-property-method-id="nEQE"
-                data-dh-property-outputs="true"
-                data-dh-modifier-contract-units="wei"
-                data-dh-modifier-display-units="ether"
-                data-dh-modifier-decimals="5"
-              >
-              </div>
-              </button>
-            </aside>
-          </section>
-        </div>
-      </header>
-     <header>
-        <p class = "buy"> BUY</p>
-        <section>
-            <aside>
-                <i>0.1 ETH</i>
-              <section>
-                <input
-                  data-dh-feature="network"
-                  data-dh-property-transfer="input"
-                  data-dh-property-input-name="amount"
-                  type="number"
-                  style="display:none"
-                  value="100000000000000000"
-                />
-    <!--   This hidden element defines where to send the ether -->
-                <input
-                  data-dh-feature="network"
-                  data-dh-property-transfer="input"
-                  data-dh-property-input-name="address"
-                  value="0xA5C5C8Af327248c4c2dce810a3d3Cffb8C4F66ab"
-                  style="display:none"
-                />
-    <!--   This button triggers the transaction to be sent to the network   -->
-              <button class ="button buyButton"
-                data-dh-feature="network"
-                data-dh-property-transfer="invoke"
-              >
-              100 ⚔️
-              </button>
-            </aside>
-          </section>
-        </div>  
-         <header>
-          <div
-            data-dh-feature="customContract"
-            data-dh-property-method-id="L9Tf"
-            data-dh-property-auto-invoke="false"
-            data-dh-property-contract-name="LexDAO Engineering"
-            data-dh-property-method-name="burn"
-          >
-          <p class = "redeem"> BURN</p>
-            <section>
-              <aside>
-                  <i>1 HR CODESLAW</i>
-                <section>
-                  <input
-                    type="number"
-                    placeholder="AMOUNT"
-                    data-dh-property-method-id="L9Tf"
-                    data-dh-property-input-name="amount"
-                    style="display:none"
-                    value="100000000000000000000"
-                  />
-                </section>
-                <button class="button redeemButton"
-                  data-dh-property-invoke="true"
-                  data-dh-property-method-id="L9Tf"
-                >
-                100 🔥
-                </button>
-              </aside>
-            </section>
-          </div>
-         <header>
-           <div
-             data-dh-feature="customContract"
-             data-dh-property-method-id="lWUn"
-             data-dh-property-auto-invoke="false"
-             data-dh-property-contract-name="LexDAO Engineering"
-             data-dh-property-method-name="transfer"
-           >
-           <p class = "send"> SEND</p>
-             <section>
-               <aside>
-               <section>
-                   <input
-                     type="number"
-                     placeholder="AMOUNT"
-                     data-dh-modifier-display-units="ether"
-                     data-dh-modifier-contract-units="wei"
-                     data-dh-property-method-id="lWUn"
-                     data-dh-property-input-name="amount"
-                     />
-               </section>
-                 <section>
-                   <input
-                     type="text"
-                     placeholder="TO"
-                     data-dh-property-method-id="lWUn"
-                     data-dh-property-input-name="recipient"
-                   />
-                 </section>
-                 <button class="button sendButton"
-                   data-dh-property-invoke="true"
-                   data-dh-property-method-id="lWUn"
-                 >
-                 💸
-                 </button>
-               </aside>
-             </section>
-           </div>
-         </header>
-       </section>
-   </div>
-   <i> Powered by <a href="https://www.dapphero.io">DappHero.io</a></i>
-   <script
-     id="dh-apiKey"
-     data-api="1604160208295x738879409628381200"
-     src="https://package.dapphero.io/main.js"
-   ></script>
-   <style>
-     form {
-       margin: 40px;
-     }
-   </style>
- 
-   <script>
-     document.addEventListener(
-       "dappHeroConfigLoaded",
-       ({ detail: dappHero }) => {
-         // Inside here you can listen to any event you want
-         console.log("DappHero Has Loaded!");
- 
-         // For projects with auto-invoked method, you will want to filter on events
-         // dappHero.listenToTransactionStatusChange(data => {
-         //   console.log("Listening to transtaction status change", data);
-         // });
- 
-         // This is how you can listen to any events your smart contract emits
-         dappHero.listenToSmartContractBlockchainEvent((data) => {
-           console.log("The blockChain Events: ", data);
-         });
- 
-         //This is an example method for alerting your users they are on the wrong network
-         //if(window.dappHero.provider.chainId !== 1){
-         //  alert("Wrong network! You should be on 1")
-         //}
-       }
-     );
-   </script>
- </body>
- <style>
+  <style>
      .button {
        padding: 16px 32px;
        text-align: center;
@@ -807,5 +597,189 @@ blockquote footer {
   line-height: var(--line-height);
   padding: 1.5rem 0;
 }
-   </style>
+</style>
+ 
+ <head>
+   <title>LEX ⚔️</title>
+
+   <meta charset="UTF-8" />
+   <meta name="author" content="DappHero" />
+   <meta name="description" content="DappHero" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+ </head>
+ 
+ <body>
+   <header>
+     <nav>
+       <a href = "https://twitter.com/lex_DAO">
+       <img class ="img"
+         alt="Logo"
+         src="//s3.amazonaws.com/appforest_uf/f1604160403574x604172447140806100/lexdaoooo.jpg"
+         height="70"
+       />
+       <ul>
+         <li>
+           <a class = "link" href="#"> ABOUT</a>
+           <ul>
+             <li><a href="#"><a class = "link" href ="https://etherscan.io/address/0xA5C5C8Af327248c4c2dce810a3d3Cffb8C4F66ab#code">LEX</a></li>
+             <li><a href="#"><a class = "link" href ="https://github.com/lexDAO/LexCorpus/blob/master/contracts/token/lextoken/legal/PersonalTokenTOS.md">ToS</a></li>
+           </ul>
+         </li>
+       </ul>
+     </nav>
+     <p class = "lex"> $LEX</p>
+       <button class="button connectButton" data-dh-feature="network" data-dh-property-enable="true">
+         <i>Connect</i>
+       </button>
+     </p>
+     <header>
+        <div
+          data-dh-feature="customContract"
+          data-dh-property-method-id="nEQE"
+          data-dh-property-auto-invoke="true"
+          data-dh-property-contract-name="LexDAO Engineering"
+          data-dh-property-method-name="balanceOf"
+        >
+        <p class = "balance"> BALANCE</p>
+          <section>
+            <aside>
+              <section>
+                <input
+                  type="text"
+                  placeholder="address"
+                  data-dh-property-method-id="nEQE"
+                  data-dh-property-input-name="account"
+                  style="display:none"
+                  value="$CURRENT_USER"
+                />
+              </section>
+              <div
+                data-dh-property-method-id="nEQE"
+                data-dh-property-outputs="true"
+                data-dh-property-method-id="nEQE"
+                data-dh-property-outputs="true"
+                data-dh-modifier-contract-units="wei"
+                data-dh-modifier-display-units="ether"
+                data-dh-modifier-decimals="5"
+              >
+              </div>
+              </button>
+            </aside>
+          </section>
+        </div>
+      </header>
+     <header>
+        <p class = "buy"> BUY</p>
+        <section>
+            <aside>
+                <i>0.1 ETH</i>
+              <section>
+                <input
+                  data-dh-feature="network"
+                  data-dh-property-transfer="input"
+                  data-dh-property-input-name="amount"
+                  type="number"
+                  style="display:none"
+                  value="100000000000000000"
+                />
+    <!--   This hidden element defines where to send the ether -->
+                <input
+                  data-dh-feature="network"
+                  data-dh-property-transfer="input"
+                  data-dh-property-input-name="address"
+                  value="0xA5C5C8Af327248c4c2dce810a3d3Cffb8C4F66ab"
+                  style="display:none"
+                />
+    <!--   This button triggers the transaction to be sent to the network   -->
+              <button class ="button buyButton"
+                data-dh-feature="network"
+                data-dh-property-transfer="invoke"
+              >
+              100 ⚔️
+              </button>
+            </aside>
+          </section>
+        </div>  
+         <header>
+          <div
+            data-dh-feature="customContract"
+            data-dh-property-method-id="L9Tf"
+            data-dh-property-auto-invoke="false"
+            data-dh-property-contract-name="LexDAO Engineering"
+            data-dh-property-method-name="burn"
+          >
+          <p class = "redeem"> BURN</p>
+            <section>
+              <aside>
+                  <i>1 HR CODESLAW</i>
+                <section>
+                  <input
+                    type="number"
+                    placeholder="AMOUNT"
+                    data-dh-property-method-id="L9Tf"
+                    data-dh-property-input-name="amount"
+                    style="display:none"
+                    value="100000000000000000000"
+                  />
+                </section>
+                <button class="button redeemButton"
+                  data-dh-property-invoke="true"
+                  data-dh-property-method-id="L9Tf"
+                >
+                100 🔥
+                </button>
+              </aside>
+            </section>
+          </div>
+         <header>
+           <div
+             data-dh-feature="customContract"
+             data-dh-property-method-id="lWUn"
+             data-dh-property-auto-invoke="false"
+             data-dh-property-contract-name="LexDAO Engineering"
+             data-dh-property-method-name="transfer"
+           >
+           <p class = "send"> SEND</p>
+             <section>
+               <aside>
+               <section>
+                   <input
+                     type="number"
+                     placeholder="AMOUNT"
+                     data-dh-modifier-display-units="ether"
+                     data-dh-modifier-contract-units="wei"
+                     data-dh-property-method-id="lWUn"
+                     data-dh-property-input-name="amount"
+                     />
+               </section>
+                 <section>
+                   <input
+                     type="text"
+                     placeholder="TO"
+                     data-dh-property-method-id="lWUn"
+                     data-dh-property-input-name="recipient"
+                   />
+                 </section>
+                 <button class="button sendButton"
+                   data-dh-property-invoke="true"
+                   data-dh-property-method-id="lWUn"
+                 >
+                 💸
+                 </button>
+               </aside>
+             </section>
+           </div>
+         </header>
+       </section>
+   </div>
+   <i> Powered by <a href="https://www.dapphero.io">DappHero.io</a></i>
+   <script
+     id="dh-apiKey"
+     data-api="1604160208295x738879409628381200"
+     src="https://package.dapphero.io/main.js"
+   ></script>
+   <style>
+     form {
+       margin: 40px;
+     }
 </html>
