@@ -84,7 +84,6 @@
        font-size: 100px;
        font-style: italic;
        margin: 4px 2px;
-       transition-duration: 0.6s;
        cursor: pointer;
      }
 
@@ -107,12 +106,11 @@
        font-size: 25px;
        font-style: italic;
        margin: 4px 2px;
-       transition-duration: 0.6s;
        cursor: pointer;
      }
 
      .balance:hover {
-      color: #ff6ec7;
+      color: #39FF14;
       transition-duration: 0.6s;
      }
 
@@ -125,12 +123,28 @@
        font-size: 80px;
        font-style: italic;
        margin: 4px 2px;
-       transition-duration: 0.6s;
        cursor: pointer;
      }
 
      .buy:hover {
       color: #faed27;
+      transition-duration: 0.6s;
+     }
+
+     .swap {
+       color: black;
+       padding: 16px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 20px;
+       font-style: italic;
+       margin: 4px 2px;
+       cursor: pointer;
+     }
+
+     .swap:hover {
+      color: #ff6ec7;
       transition-duration: 0.6s;
      }
 
@@ -143,7 +157,6 @@
        font-size: 80px;
        font-style: italic;
        margin: 4px 2px;
-       transition-duration: 0.6s;
        cursor: pointer;
      }
 
@@ -161,7 +174,6 @@
        font-size: 80px;
        font-style: italic;
        margin: 4px 2px;
-       transition-duration: 0.6s;
        cursor: pointer;
      }
 
@@ -679,6 +691,7 @@ blockquote footer {
       </header>
      <header>
         <p class = "buy"> BUY</p>
+        <a class = "swap" href ="https://app.uniswap.org/#/swap?exactField=output&exactAmount=10&outputCurrency=0xA5C5C8Af327248c4c2dce810a3d3Cffb8C4F66ab">🦄SWAP</a>
         <section>
             <aside>
                 <i>0.1 ETH</i>
@@ -719,32 +732,64 @@ blockquote footer {
             data-dh-property-method-name="burn"
           >
           <p class = "redeem"> BURN</p>
-            <section>
-              <aside>
-                  <i>1 HR CODESLAW</i>
-                <section>
-                  <input
-                    type="number"
-                    placeholder="AMOUNT"
-                    data-dh-property-method-id="L9Tf"
-                    data-dh-property-input-name="amount"
-                    style="display:none"
-                    value="100000000000000000000"
-                  />
-                </section>
-                <button class="button redeemButton"
-                  data-dh-property-invoke="true"
-                  data-dh-property-method-id="L9Tf"
-                >
-                100 🔥
-                </button>
-              </aside>
-            </section>
-              <div 
-                data-dh-property-method-id="L9Tf" 
-                data-dh-property-outputs="true">
-              </div>
-          </div>
+         <section>
+         <aside>
+         <section>
+           <div
+               data-dh-feature="customContract"
+               data-dh-property-method-id="L9Tg"
+               data-dh-property-auto-invoke="false"
+               data-dh-property-contract-name="LexDAO Engineering"
+               data-dh-property-method-name="burn"
+             >
+             <input
+               type="number"
+               placeholder="AMOUNT"
+               data-dh-property-method-id="L9Tg"
+               data-dh-property-input-name="amount"
+               style="display:none"
+               value="10000000000000000000"
+             />
+         </section>
+         <button class="button redeemButton"
+           data-dh-property-invoke="true"
+           data-dh-property-method-id="L9Tg"
+         >
+         10 🔥
+         </button>
+         <i>TWEET THREAD</i>
+               <section>
+               <div
+                   data-dh-feature="customContract"
+                   data-dh-property-method-id="L9Tf"
+                   data-dh-property-auto-invoke="false"
+                   data-dh-property-contract-name="LexDAO Engineering"
+                   data-dh-property-method-name="burn"
+                 >
+                 <input
+                   type="number"
+                   placeholder="AMOUNT"
+                   data-dh-property-method-id="L9Tf"
+                   data-dh-property-input-name="amount"
+                   style="display:none"
+                   value="100000000000000000000"
+                 />
+               </section>
+               <button class="button redeemButton"
+                 data-dh-property-invoke="true"
+                 data-dh-property-method-id="L9Tf"
+               >
+               100 🔥
+               </button>
+             <i>CODE REVIEW</i>
+             </section>
+             </aside>
+           </section>
+             <div
+               data-dh-property-method-id="L9Tf"
+               data-dh-property-outputs="true">
+             </div>
+         </div>
          <header>
            <div
              data-dh-feature="customContract"
