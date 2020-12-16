@@ -108,7 +108,24 @@
    filter: invert(100%);
    transition-duration: 0.6s;
  }
-  
+
+ .balance {
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-style: italic;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .balance:hover {
+   color: #39FF14;
+   transition-duration: 0.6s;
+  }
+
   .buy {
     color: black;
     padding: 16px 32px;
@@ -703,10 +720,40 @@ padding: 1.5rem 0;
     </button>
   </p>
   <header>
+    <div
+      data-dh-feature="customContract"
+      data-dh-property-method-id="EpQI"
+      data-dh-property-auto-invoke="true"
+      data-dh-property-contract-name="LEX9999"
+      data-dh-property-method-name="balanceOf"
+    >
+    <p class = "balance"> BALANCE</p>
       <div
         data-dh-feature="user" 
         data-dh-property-address="true">
       </div>
+      <section>
+        <aside>
+          <section>
+            <input
+              type="text"
+              placeholder="address"
+              data-dh-property-method-id="EpQI"
+              data-dh-property-input-name="[0]"
+              style="display:none"
+              value="$CURRENT_USER"
+            />
+          </section>
+          <div
+            data-dh-property-method-id="EpQI"
+            data-dh-property-outputs="true"
+            data-dh-modifier-contract-units="wei"
+            data-dh-modifier-display-units="ether"
+            data-dh-modifier-decimals="5"
+          >
+          </div>
+          &nbsp; LEX
+        </section>
     <div
       data-dh-feature="customContract"
       data-dh-property-method-id="ztIT"
