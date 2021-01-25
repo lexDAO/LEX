@@ -673,7 +673,6 @@ padding: 1.5rem 0;
 <meta name="description" content="$LEX DAPP" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-
 <body>
 <header>
   <nav>
@@ -702,81 +701,12 @@ padding: 1.5rem 0;
     </button>
   </p>
   <header>
-      <div
-        data-dh-feature="user" 
-        data-dh-property-address="true">
-      </div>
-    <div
-      data-dh-feature="customContract"
-      data-dh-property-method-id="ztIT"
-      data-dh-property-auto-invoke="true"
-      data-dh-property-contract-name="LEX9999"
-      data-dh-property-method-name="purchase"
     >
-    <p class = "buy"> BUY</p>
-      <section>
-        <aside>
-          <section>
-            <input
-              type="text"
-              placeholder="EthValue"
-              data-dh-property-method-id="ztIT"
-              data-dh-property-input-name="EthValue"
-              style="display:none"
-              value="0.1"
-            />
-          </section>
-          <button class = "button buyButton"
-            data-dh-property-invoke="true"
-            data-dh-property-method-id="ztIT"
-          >
-          100 💸
-          </button>
+    <p class = "buy"> <a href="https://app.uniswap.org/#/swap?exactField=output&exactAmount=10&outputCurrency=0x63125c0d5Cd9071de9A1ac84c400982f41C697AE">BUY 🦄</a></p> 
         </aside>
       </section>
     </div>
   </header>
-    <p class = "redeem"> BURN</p>
-  <div
-    data-dh-feature="customContract"
-    data-dh-property-method-id="PdGf"
-    data-dh-property-auto-invoke="false"
-    data-dh-property-contract-name="LEX9999"
-    data-dh-property-method-name="redeem"
-  >
-    <section>
-      <aside>
-        <section>
-          <input
-            type="number"
-            placeholder="AMOUNT"
-            data-dh-property-method-id="PdGf"
-            style="display:none"
-            data-dh-property-input-name="value"
-            value="100000000000000000000"
-          />
-        </section>
-        <section>
-          <input
-            type="text"
-            placeholder="CONTACT/REQUEST"
-            data-dh-property-method-id="PdGf"
-            data-dh-property-input-name="redemption"
-          />
-        </section>
-  
-        <button class="button redeemButton"
-   data-dh-property-invoke="true"
-   data-dh-property-method-id="PdGf"
-  >
-  100 🔥
-  </button>
-  <div class="popup" onclick="myFunction()"><i>CODESLAW</i>
-    <span class="popuptext" id="myPopup"><a href="#"><a class = "link" href ="http://unenumerated.blogspot.com/2006/11/wet-code-and-dry.html">Wet code and dry ⚔️</a></span>
-  </div>
-      </aside>
-    </section>
-  </div>
   <header>
     <p class = "send"> SEND</p>
     <div
@@ -822,6 +752,47 @@ padding: 1.5rem 0;
       </section>
     </div>
   </header>
+    <p class = "redeem"> REDEEM</p>
+  <div
+    data-dh-feature="customContract"
+    data-dh-property-method-id="PdGf"
+    data-dh-property-auto-invoke="false"
+    data-dh-property-contract-name="LEX9999"
+    data-dh-property-method-name="redeem"
+  >
+    <section>
+      <aside>
+        <section>
+          <input
+            type="number"
+            placeholder="AMOUNT"
+            data-dh-property-method-id="PdGf"
+            style="display:none"
+            data-dh-property-input-name="value"
+            value="100000000000000000000"
+          />
+        </section>
+        <section>
+          <input
+            type="text"
+            placeholder="CONTACT/REQUEST"
+            data-dh-property-method-id="PdGf"
+            data-dh-property-input-name="redemption"
+          />
+        </section>
+  
+        <button class="button redeemButton"
+   data-dh-property-invoke="true"
+   data-dh-property-method-id="PdGf"
+  >
+  100 🔥
+  </button>
+  <div class="popup" onclick="myFunction()"><i>CODESLAW</i>
+    <span class="popuptext" id="myPopup"><a href="#"><a class = "link" href ="http://unenumerated.blogspot.com/2006/11/wet-code-and-dry.html">Wet code and dry ⚔️</a></span>
+  </div>
+      </aside>
+    </section>
+  </div>
     <script
       id="dh-apiKey"
       data-api="1605033378318x759854969436241900"
